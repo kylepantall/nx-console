@@ -261,7 +261,7 @@ function getWorkspaceAddFlag(
       !!pkgJson.private &&
       !!pkgJson.workspaces &&
       pkgJson.workspaces?.length > 0;
-    return isWorkspace ? '-W' : '';
+    return '';
   }
   if (pkgManager === 'npm') {
     const isWorkspace = !!pkgJson.workspaces && pkgJson.workspaces?.length > 0;
